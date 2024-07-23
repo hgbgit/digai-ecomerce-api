@@ -1,0 +1,154 @@
+{
+  "resources": [
+    {
+      "_id": "req_1",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"name\": \"Product Name\", \"description\": \"Product Description\", \"price\": 99.99, \"stock\": 100}"
+      },
+      "created": 1629788657556,
+      "headers": [],
+      "method": "POST",
+      "modified": 1629788657556,
+      "name": "Create Product",
+      "url": "http://localhost:3000/api/products",
+      "type": "request"
+    },
+    {
+      "_id": "req_2",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"name\": \"Updated Product Name\", \"description\": \"Updated Product Description\", \"price\": 89.99, \"stock\": 150}"
+      },
+      "created": 1629788657556,
+      "headers": [],
+      "method": "PUT",
+      "modified": 1629788657556,
+      "name": "Update Product",
+      "url": "http://localhost:3000/api/products/:id",
+      "type": "request"
+    },
+    {
+      "_id": "req_3",
+      "authentication": {},
+      "body": null,
+      "created": 1629788657556,
+      "headers": [],
+      "method": "DELETE",
+      "modified": 1629788657556,
+      "name": "Delete Product",
+      "url": "http://localhost:3000/api/products/:id",
+      "type": "request"
+    },
+    {
+      "_id": "req_4",
+      "authentication": {},
+      "body": null,
+      "created": 1629788657556,
+      "headers": [],
+      "method": "GET",
+      "modified": 1629788657556,
+      "name": "Get Product",
+      "url": "http://localhost:3000/api/products/:id",
+      "type": "request"
+    },
+    {
+      "_id": "req_5",
+      "authentication": {},
+      "body": null,
+      "created": 1629788657556,
+      "headers": [],
+      "method": "GET",
+      "modified": 1629788657556,
+      "name": "List Products",
+      "url": "http://localhost:3000/api/products",
+      "type": "request"
+    },
+    {
+      "_id": "req_6",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"userId\": \"60c72b2f5f1b2c0015b3b9c7\", \"products\": [{\"productId\": \"60c72b2f5f1b2c0015b3b9c8\", \"quantity\": 1}]}"
+      },
+      "created": 1629788657556,
+      "headers": [],
+      "method": "POST",
+      "modified": 1629788657556,
+      "name": "Create Order",
+      "url": "http://localhost:3000/api/orders",
+      "type": "request"
+    },
+    {
+      "_id": "req_7",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"status\": \"shipped\"}"
+      },
+      "created": 1629788657556,
+      "headers": [],
+      "method": "PUT",
+      "modified": 1629788657556,
+      "name": "Update Order",
+      "url": "http://localhost:3000/api/orders/:id",
+      "type": "request"
+    },
+    {
+      "_id": "req_8",
+      "authentication": {},
+      "body": null,
+      "created": 1629788657556,
+      "headers": [],
+      "method": "GET",
+      "modified": 1629788657556,
+      "name": "Get Order",
+      "url": "http://localhost:3000/api/orders/:id",
+      "type": "request"
+    },
+    {
+      "_id": "req_9",
+      "authentication": {},
+      "body": null,
+      "created": 1629788657556,
+      "headers": [],
+      "method": "GET",
+      "modified": 1629788657556,
+      "name": "List User Orders",
+      "url": "http://localhost:3000/api/orders/user/:userId",
+      "type": "request"
+    },
+    {
+      "_id": "req_10",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"name\": \"User Name\", \"email\": \"user@example.com\", \"password\": \"password\"}"
+      },
+      "created": 1629788657556,
+      "headers": [],
+      "method": "POST",
+      "modified": 1629788657556,
+      "name": "Register User",
+      "url": "http://localhost:3000/api/auth/register",
+      "type": "request"
+    },
+    {
+      "_id": "req_11",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"email\": \"user@example.com\", \"password\": \"password\"}"
+      },
+      "created": 1629788657556,
+      "headers": [],
+      "method": "POST",
+      "modified": 1629788657556,
+      "name": "Login User",
+      "url": "http://localhost:3000/api/auth/login",
+      "type": "request"
+    }
+  ]
+}
