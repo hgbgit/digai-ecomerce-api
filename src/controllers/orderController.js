@@ -10,6 +10,10 @@ exports.createOrder = async (req, res) => {
 exports.updateOrder = async (req, res) => {
     const {id} = req.params;
     const {status} = req.body;
+
+    if (status && typeof status !== 'string' )
+        return res.status(400).json({error: 'Invalid order status'});
+
     const order = await Order.findByIdAndUpdate(id, {status}, {new: true});
 
     if (!order)
@@ -19,10 +23,13 @@ exports.updateOrder = async (req, res) => {
 
 exports.getOrder = async (req, res) => {
     const {id} = req.params;
-    const order = await Order.findById(id);
+    const order = await Order.findById(id)
 
     if (!order)
         return res.status(404).json({error: 'Order not found'});
+
+    if (order.status && typeof order.status !== 'string' )
+        return res.status(400).json({error: 'Invalid order status'});
 
     res.status(200).json(order);
 };
